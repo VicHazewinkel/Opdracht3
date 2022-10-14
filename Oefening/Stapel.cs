@@ -9,6 +9,7 @@ namespace Oefening
     internal class Stapel<T>
     {
         private List<T> Container = new List<T>();
+        private List<T> ContainerCopy = new List<T>();
 
         public void Toevoegen(T item)
         {
@@ -17,9 +18,15 @@ namespace Oefening
 
         public T Verwijderen()
         {
-            T last = Container.Last();
-            Container.Remove(last);
-            return last;
+            if (Container.Count <= 0)
+            {
+                throw new ArgumentNullException();
+            }
+
+            T updatedContainer = Container[Container.Count - 1];
+            Container.RemoveAt(Container.Count - 1);
+
+            return updatedContainer; 
         }
 
         public void Leegmaken()
