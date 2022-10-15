@@ -37,6 +37,7 @@
             this.button_Leegmaken = new System.Windows.Forms.Button();
             this.label_stringText = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label_aanwezig_recponce = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label_StapelString
@@ -123,11 +124,21 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Waarde Stapel<string>";
             // 
+            // label_aanwezig_recponce
+            // 
+            this.label_aanwezig_recponce.AutoSize = true;
+            this.label_aanwezig_recponce.Location = new System.Drawing.Point(21, 188);
+            this.label_aanwezig_recponce.Name = "label_aanwezig_recponce";
+            this.label_aanwezig_recponce.Size = new System.Drawing.Size(31, 15);
+            this.label_aanwezig_recponce.TabIndex = 15;
+            this.label_aanwezig_recponce.Text = ". . . . ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label_aanwezig_recponce);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_stringText);
             this.Controls.Add(this.button_Leegmaken);
@@ -155,5 +166,6 @@
         private Button button_Leegmaken;
         private Label label_stringText;
         private Label label1;
+        private Label label_aanwezig_recponce;
     }
 }
