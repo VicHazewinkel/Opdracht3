@@ -10,10 +10,12 @@ namespace Oefening
     {
         private List<T> Container = new List<T>();
         private List<T> ContainerCopy = new List<T>();
+        public int teller = -1;
 
         public void Toevoegen(T item)
         {
-            Container.Add(item);    
+            Container.Add(item); 
+            
         }
 
         public T Verwijderen()

@@ -38,6 +38,17 @@
             this.label_stringText = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label_aanwezig_recponce = new System.Windows.Forms.Label();
+            this.label_stapelInt = new System.Windows.Forms.Label();
+            this.button_ToevoegenInt = new System.Windows.Forms.Button();
+            this.textBox_INT = new System.Windows.Forms.TextBox();
+            this.button_VerwijderenINT = new System.Windows.Forms.Button();
+            this.button_INT_toevoegen = new System.Windows.Forms.Button();
+            this.button_INT_aanwezigheid = new System.Windows.Forms.Button();
+            this.Button_INT_copy = new System.Windows.Forms.Button();
+            this.label_INT_Text = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button_show_int_toString = new System.Windows.Forms.Button();
+            this.button_show_string_tostring = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_StapelString
@@ -60,7 +71,7 @@
             // 
             this.button_Toevoegen.Location = new System.Drawing.Point(89, 93);
             this.button_Toevoegen.Name = "button_Toevoegen";
-            this.button_Toevoegen.Size = new System.Drawing.Size(75, 23);
+            this.button_Toevoegen.Size = new System.Drawing.Size(100, 23);
             this.button_Toevoegen.TabIndex = 7;
             this.button_Toevoegen.Text = "Toevoegen ";
             this.button_Toevoegen.UseVisualStyleBackColor = true;
@@ -70,7 +81,7 @@
             // 
             this.button_Verwijderen.Location = new System.Drawing.Point(89, 122);
             this.button_Verwijderen.Name = "button_Verwijderen";
-            this.button_Verwijderen.Size = new System.Drawing.Size(75, 23);
+            this.button_Verwijderen.Size = new System.Drawing.Size(100, 23);
             this.button_Verwijderen.TabIndex = 8;
             this.button_Verwijderen.Text = "Verwijderen";
             this.button_Verwijderen.UseVisualStyleBackColor = true;
@@ -90,7 +101,7 @@
             // 
             this.button_Aanwezigheid.Location = new System.Drawing.Point(89, 180);
             this.button_Aanwezigheid.Name = "button_Aanwezigheid";
-            this.button_Aanwezigheid.Size = new System.Drawing.Size(75, 23);
+            this.button_Aanwezigheid.Size = new System.Drawing.Size(100, 23);
             this.button_Aanwezigheid.TabIndex = 10;
             this.button_Aanwezigheid.Text = "Aanwezigheid ";
             this.button_Aanwezigheid.UseVisualStyleBackColor = true;
@@ -100,7 +111,7 @@
             // 
             this.button_Leegmaken.Location = new System.Drawing.Point(89, 151);
             this.button_Leegmaken.Name = "button_Leegmaken";
-            this.button_Leegmaken.Size = new System.Drawing.Size(75, 23);
+            this.button_Leegmaken.Size = new System.Drawing.Size(100, 23);
             this.button_Leegmaken.TabIndex = 11;
             this.button_Leegmaken.Text = "Leegmaken";
             this.button_Leegmaken.UseVisualStyleBackColor = true;
@@ -133,11 +144,126 @@
             this.label_aanwezig_recponce.TabIndex = 15;
             this.label_aanwezig_recponce.Text = ". . . . ";
             // 
+            // label_stapelInt
+            // 
+            this.label_stapelInt.AutoSize = true;
+            this.label_stapelInt.Location = new System.Drawing.Point(234, 46);
+            this.label_stapelInt.Name = "label_stapelInt";
+            this.label_stapelInt.Size = new System.Drawing.Size(73, 15);
+            this.label_stapelInt.TabIndex = 16;
+            this.label_stapelInt.Text = "Stapel<INT>";
+            // 
+            // button_ToevoegenInt
+            // 
+            this.button_ToevoegenInt.Location = new System.Drawing.Point(234, 93);
+            this.button_ToevoegenInt.Name = "button_ToevoegenInt";
+            this.button_ToevoegenInt.Size = new System.Drawing.Size(100, 23);
+            this.button_ToevoegenInt.TabIndex = 17;
+            this.button_ToevoegenInt.Text = "Toevoegen";
+            this.button_ToevoegenInt.UseVisualStyleBackColor = true;
+            this.button_ToevoegenInt.Click += new System.EventHandler(this.button_Stapel_INT_Toevoegen_Click);
+            // 
+            // textBox_INT
+            // 
+            this.textBox_INT.Location = new System.Drawing.Point(234, 64);
+            this.textBox_INT.Name = "textBox_INT";
+            this.textBox_INT.Size = new System.Drawing.Size(100, 23);
+            this.textBox_INT.TabIndex = 18;
+            // 
+            // button_VerwijderenINT
+            // 
+            this.button_VerwijderenINT.Location = new System.Drawing.Point(232, 122);
+            this.button_VerwijderenINT.Name = "button_VerwijderenINT";
+            this.button_VerwijderenINT.Size = new System.Drawing.Size(100, 23);
+            this.button_VerwijderenINT.TabIndex = 19;
+            this.button_VerwijderenINT.Text = "Verwijderen";
+            this.button_VerwijderenINT.UseVisualStyleBackColor = true;
+            this.button_VerwijderenINT.Click += new System.EventHandler(this.button_Stapel_INT_Verwijderen_Click);
+            // 
+            // button_INT_toevoegen
+            // 
+            this.button_INT_toevoegen.Location = new System.Drawing.Point(232, 151);
+            this.button_INT_toevoegen.Name = "button_INT_toevoegen";
+            this.button_INT_toevoegen.Size = new System.Drawing.Size(100, 23);
+            this.button_INT_toevoegen.TabIndex = 20;
+            this.button_INT_toevoegen.Text = "Leegmaken";
+            this.button_INT_toevoegen.UseVisualStyleBackColor = true;
+            this.button_INT_toevoegen.Click += new System.EventHandler(this.button_Stapel_INT_leegmaken_Click);
+            // 
+            // button_INT_aanwezigheid
+            // 
+            this.button_INT_aanwezigheid.Location = new System.Drawing.Point(232, 180);
+            this.button_INT_aanwezigheid.Name = "button_INT_aanwezigheid";
+            this.button_INT_aanwezigheid.Size = new System.Drawing.Size(100, 23);
+            this.button_INT_aanwezigheid.TabIndex = 21;
+            this.button_INT_aanwezigheid.Text = "Aanweigheid";
+            this.button_INT_aanwezigheid.UseVisualStyleBackColor = true;
+            this.button_INT_aanwezigheid.Click += new System.EventHandler(this.button_Stapel_INT_aanwezigheid_Click);
+            // 
+            // Button_INT_copy
+            // 
+            this.Button_INT_copy.Location = new System.Drawing.Point(232, 209);
+            this.Button_INT_copy.Name = "Button_INT_copy";
+            this.Button_INT_copy.Size = new System.Drawing.Size(75, 23);
+            this.Button_INT_copy.TabIndex = 22;
+            this.Button_INT_copy.Text = "Copy";
+            this.Button_INT_copy.UseVisualStyleBackColor = true;
+            this.Button_INT_copy.Click += new System.EventHandler(this.button_Stapel_INT_copy_Click);
+            // 
+            // label_INT_Text
+            // 
+            this.label_INT_Text.AutoSize = true;
+            this.label_INT_Text.Location = new System.Drawing.Point(89, 324);
+            this.label_INT_Text.Name = "label_INT_Text";
+            this.label_INT_Text.Size = new System.Drawing.Size(16, 15);
+            this.label_INT_Text.TabIndex = 23;
+            this.label_INT_Text.Text = "...";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(89, 309);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 15);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Waarde Stapel<INT>";
+            // 
+            // button_show_int_toString
+            // 
+            this.button_show_int_toString.Location = new System.Drawing.Point(234, 238);
+            this.button_show_int_toString.Name = "button_show_int_toString";
+            this.button_show_int_toString.Size = new System.Drawing.Size(75, 23);
+            this.button_show_int_toString.TabIndex = 25;
+            this.button_show_int_toString.Text = "Show";
+            this.button_show_int_toString.UseVisualStyleBackColor = true;
+            this.button_show_int_toString.Click += new System.EventHandler(this.button_Stapel_Int_ToString_Click);
+            // 
+            // button_show_string_tostring
+            // 
+            this.button_show_string_tostring.Location = new System.Drawing.Point(89, 238);
+            this.button_show_string_tostring.Name = "button_show_string_tostring";
+            this.button_show_string_tostring.Size = new System.Drawing.Size(75, 23);
+            this.button_show_string_tostring.TabIndex = 26;
+            this.button_show_string_tostring.Text = "Show toString";
+            this.button_show_string_tostring.UseVisualStyleBackColor = true;
+            this.button_show_string_tostring.Click += new System.EventHandler(this.button_StapelString_ToString_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_show_string_tostring);
+            this.Controls.Add(this.button_show_int_toString);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label_INT_Text);
+            this.Controls.Add(this.Button_INT_copy);
+            this.Controls.Add(this.button_INT_aanwezigheid);
+            this.Controls.Add(this.button_INT_toevoegen);
+            this.Controls.Add(this.button_VerwijderenINT);
+            this.Controls.Add(this.textBox_INT);
+            this.Controls.Add(this.button_ToevoegenInt);
+            this.Controls.Add(this.label_stapelInt);
             this.Controls.Add(this.label_aanwezig_recponce);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_stringText);
@@ -167,5 +293,16 @@
         private Label label_stringText;
         private Label label1;
         private Label label_aanwezig_recponce;
+        private Label label_stapelInt;
+        private Button button_ToevoegenInt;
+        private TextBox textBox_INT;
+        private Button button_VerwijderenINT;
+        private Button button_INT_toevoegen;
+        private Button button_INT_aanwezigheid;
+        private Button Button_INT_copy;
+        private Label label_INT_Text;
+        private Label label3;
+        private Button button_show_int_toString;
+        private Button button_show_string_tostring;
     }
 }
