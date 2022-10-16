@@ -49,6 +49,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button_show_int_toString = new System.Windows.Forms.Button();
             this.button_show_string_tostring = new System.Windows.Forms.Button();
+            this.textBox_kleine_klasse = new System.Windows.Forms.TextBox();
+            this.label_kleine_klasse = new System.Windows.Forms.Label();
+            this.button_toevoegen_kleine_klasse = new System.Windows.Forms.Button();
+            this.button_verwijderen_kleine_klasse = new System.Windows.Forms.Button();
+            this.button_leegmaken_kleine_klasse = new System.Windows.Forms.Button();
+            this.button_aanwezigheid_kleine_klasse = new System.Windows.Forms.Button();
+            this.button_copy_kleine_klasse = new System.Windows.Forms.Button();
+            this.button_show_kleine_klasse = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label_kleine_klasse_text = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label_StapelString
@@ -91,7 +103,7 @@
             // 
             this.button_Copy.Location = new System.Drawing.Point(89, 209);
             this.button_Copy.Name = "button_Copy";
-            this.button_Copy.Size = new System.Drawing.Size(75, 23);
+            this.button_Copy.Size = new System.Drawing.Size(100, 23);
             this.button_Copy.TabIndex = 9;
             this.button_Copy.Text = "Copy ";
             this.button_Copy.UseVisualStyleBackColor = true;
@@ -204,7 +216,7 @@
             // 
             this.Button_INT_copy.Location = new System.Drawing.Point(232, 209);
             this.Button_INT_copy.Name = "Button_INT_copy";
-            this.Button_INT_copy.Size = new System.Drawing.Size(75, 23);
+            this.Button_INT_copy.Size = new System.Drawing.Size(100, 23);
             this.Button_INT_copy.TabIndex = 22;
             this.Button_INT_copy.Text = "Copy";
             this.Button_INT_copy.UseVisualStyleBackColor = true;
@@ -230,7 +242,7 @@
             // 
             // button_show_int_toString
             // 
-            this.button_show_int_toString.Location = new System.Drawing.Point(234, 238);
+            this.button_show_int_toString.Location = new System.Drawing.Point(245, 238);
             this.button_show_int_toString.Name = "button_show_int_toString";
             this.button_show_int_toString.Size = new System.Drawing.Size(75, 23);
             this.button_show_int_toString.TabIndex = 25;
@@ -240,7 +252,7 @@
             // 
             // button_show_string_tostring
             // 
-            this.button_show_string_tostring.Location = new System.Drawing.Point(89, 238);
+            this.button_show_string_tostring.Location = new System.Drawing.Point(99, 238);
             this.button_show_string_tostring.Name = "button_show_string_tostring";
             this.button_show_string_tostring.Size = new System.Drawing.Size(75, 23);
             this.button_show_string_tostring.TabIndex = 26;
@@ -248,11 +260,135 @@
             this.button_show_string_tostring.UseVisualStyleBackColor = true;
             this.button_show_string_tostring.Click += new System.EventHandler(this.button_StapelString_ToString_Click);
             // 
+            // textBox_kleine_klasse
+            // 
+            this.textBox_kleine_klasse.Location = new System.Drawing.Point(385, 64);
+            this.textBox_kleine_klasse.Name = "textBox_kleine_klasse";
+            this.textBox_kleine_klasse.Size = new System.Drawing.Size(100, 23);
+            this.textBox_kleine_klasse.TabIndex = 27;
+            // 
+            // label_kleine_klasse
+            // 
+            this.label_kleine_klasse.AutoSize = true;
+            this.label_kleine_klasse.Location = new System.Drawing.Point(385, 31);
+            this.label_kleine_klasse.Name = "label_kleine_klasse";
+            this.label_kleine_klasse.Size = new System.Drawing.Size(122, 15);
+            this.label_kleine_klasse.TabIndex = 28;
+            this.label_kleine_klasse.Text = "Stapel<kleine_klasse>";
+            // 
+            // button_toevoegen_kleine_klasse
+            // 
+            this.button_toevoegen_kleine_klasse.Location = new System.Drawing.Point(385, 93);
+            this.button_toevoegen_kleine_klasse.Name = "button_toevoegen_kleine_klasse";
+            this.button_toevoegen_kleine_klasse.Size = new System.Drawing.Size(100, 23);
+            this.button_toevoegen_kleine_klasse.TabIndex = 29;
+            this.button_toevoegen_kleine_klasse.Text = "Toevoegen";
+            this.button_toevoegen_kleine_klasse.UseVisualStyleBackColor = true;
+            this.button_toevoegen_kleine_klasse.Click += new System.EventHandler(this.button_Stapel_kleine_klasse_Toevoegen_Click);
+            // 
+            // button_verwijderen_kleine_klasse
+            // 
+            this.button_verwijderen_kleine_klasse.Location = new System.Drawing.Point(385, 122);
+            this.button_verwijderen_kleine_klasse.Name = "button_verwijderen_kleine_klasse";
+            this.button_verwijderen_kleine_klasse.Size = new System.Drawing.Size(100, 23);
+            this.button_verwijderen_kleine_klasse.TabIndex = 30;
+            this.button_verwijderen_kleine_klasse.Text = "Verwijderen";
+            this.button_verwijderen_kleine_klasse.UseVisualStyleBackColor = true;
+            this.button_verwijderen_kleine_klasse.Click += new System.EventHandler(this.button_Stapel_kleine_klasse_Verwijderen_Click);
+            // 
+            // button_leegmaken_kleine_klasse
+            // 
+            this.button_leegmaken_kleine_klasse.Location = new System.Drawing.Point(385, 151);
+            this.button_leegmaken_kleine_klasse.Name = "button_leegmaken_kleine_klasse";
+            this.button_leegmaken_kleine_klasse.Size = new System.Drawing.Size(100, 23);
+            this.button_leegmaken_kleine_klasse.TabIndex = 31;
+            this.button_leegmaken_kleine_klasse.Text = "Leegmaken";
+            this.button_leegmaken_kleine_klasse.UseVisualStyleBackColor = true;
+            this.button_leegmaken_kleine_klasse.Click += new System.EventHandler(this.button_Stapel_kleine_klasse_leegmaken_Click);
+            // 
+            // button_aanwezigheid_kleine_klasse
+            // 
+            this.button_aanwezigheid_kleine_klasse.Location = new System.Drawing.Point(385, 180);
+            this.button_aanwezigheid_kleine_klasse.Name = "button_aanwezigheid_kleine_klasse";
+            this.button_aanwezigheid_kleine_klasse.Size = new System.Drawing.Size(100, 23);
+            this.button_aanwezigheid_kleine_klasse.TabIndex = 32;
+            this.button_aanwezigheid_kleine_klasse.Text = "Aanwezigheid";
+            this.button_aanwezigheid_kleine_klasse.UseVisualStyleBackColor = true;
+            this.button_aanwezigheid_kleine_klasse.Click += new System.EventHandler(this.button_Stapel_kleine_klasse_aanwezigheid_Click);
+            // 
+            // button_copy_kleine_klasse
+            // 
+            this.button_copy_kleine_klasse.Location = new System.Drawing.Point(385, 209);
+            this.button_copy_kleine_klasse.Name = "button_copy_kleine_klasse";
+            this.button_copy_kleine_klasse.Size = new System.Drawing.Size(100, 23);
+            this.button_copy_kleine_klasse.TabIndex = 33;
+            this.button_copy_kleine_klasse.Text = "Copy";
+            this.button_copy_kleine_klasse.UseVisualStyleBackColor = true;
+            this.button_copy_kleine_klasse.Click += new System.EventHandler(this.button_Stapel_kleine_klasse_copy_Click);
+            // 
+            // button_show_kleine_klasse
+            // 
+            this.button_show_kleine_klasse.Location = new System.Drawing.Point(398, 238);
+            this.button_show_kleine_klasse.Name = "button_show_kleine_klasse";
+            this.button_show_kleine_klasse.Size = new System.Drawing.Size(75, 23);
+            this.button_show_kleine_klasse.TabIndex = 34;
+            this.button_show_kleine_klasse.Text = "Show";
+            this.button_show_kleine_klasse.UseVisualStyleBackColor = true;
+            this.button_show_kleine_klasse.Click += new System.EventHandler(this.button_Stapel_kleine_klasse_ToString_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(385, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 15);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Geef Het Konijn een naam";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(89, 339);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 15);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Stapel<kleine_klasse>";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(89, 354);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(152, 15);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "Naam van het konijn opties";
+            // 
+            // label_kleine_klasse_text
+            // 
+            this.label_kleine_klasse_text.AutoSize = true;
+            this.label_kleine_klasse_text.Location = new System.Drawing.Point(89, 369);
+            this.label_kleine_klasse_text.Name = "label_kleine_klasse_text";
+            this.label_kleine_klasse_text.Size = new System.Drawing.Size(16, 15);
+            this.label_kleine_klasse_text.TabIndex = 38;
+            this.label_kleine_klasse_text.Text = "...";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label_kleine_klasse_text);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button_show_kleine_klasse);
+            this.Controls.Add(this.button_copy_kleine_klasse);
+            this.Controls.Add(this.button_aanwezigheid_kleine_klasse);
+            this.Controls.Add(this.button_leegmaken_kleine_klasse);
+            this.Controls.Add(this.button_verwijderen_kleine_klasse);
+            this.Controls.Add(this.button_toevoegen_kleine_klasse);
+            this.Controls.Add(this.label_kleine_klasse);
+            this.Controls.Add(this.textBox_kleine_klasse);
             this.Controls.Add(this.button_show_string_tostring);
             this.Controls.Add(this.button_show_int_toString);
             this.Controls.Add(this.label3);
@@ -304,5 +440,17 @@
         private Label label3;
         private Button button_show_int_toString;
         private Button button_show_string_tostring;
+        private TextBox textBox_kleine_klasse;
+        private Label label_kleine_klasse;
+        private Button button_toevoegen_kleine_klasse;
+        private Button button_verwijderen_kleine_klasse;
+        private Button button_leegmaken_kleine_klasse;
+        private Button button_aanwezigheid_kleine_klasse;
+        private Button button_copy_kleine_klasse;
+        private Button button_show_kleine_klasse;
+        private Label label2;
+        private Label label4;
+        private Label label5;
+        private Label label_kleine_klasse_text;
     }
 }

@@ -52,8 +52,8 @@ namespace Oefening
             // return ContainerCopy
 
             return (Stapel<T>)this.MemberwiseClone(); 
-
         }
+
 
     }
 }

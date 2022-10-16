@@ -5,7 +5,7 @@ namespace Oefening
         // stapels
         private Stapel<string> stapel_String = new  Stapel<string>();
         private Stapel<int> stapel_Int = new Stapel<int>();
-        // Stapel<Dier> stapel_Dier = new Stapel<Dier>();
+        Stapel<Dier> stapel_Dier = new Stapel<Dier>();
         public Form1()
         {
             InitializeComponent();
@@ -127,8 +127,53 @@ namespace Oefening
             label_INT_Text.Text = Convert.ToString(textBox_INT.Text);
         }
 
-
-
         // _________________________ PERSOON _________________________
+
+        private void button_Stapel_kleine_klasse_Toevoegen_Click(object sender, EventArgs e)
+        {
+            stapel_Dier.Toevoegen(new Dier(textBox_kleine_klasse.Text));
+            label_kleine_klasse_text.Text = stapel_Dier.ToString(); 
+        }
+
+        private void button_Stapel_kleine_klasse_Verwijderen_Click(object sender, EventArgs e)
+        {
+            stapel_Dier.Verwijderen();
+            MessageBox.Show("Item is verwijdert");
+        }
+
+        private void button_Stapel_kleine_klasse_leegmaken_Click(object sender, EventArgs e)
+        {
+            stapel_Dier.Leegmaken();
+            MessageBox.Show("lijst is leeg gemaakt");
+        }
+
+        private void button_Stapel_kleine_klasse_aanwezigheid_Click(object sender, EventArgs e)
+        {
+            if (stapel_Dier.IsAanwezig(new Dier(textBox_kleine_klasse.Text)))
+            {
+                MessageBox.Show(" naam staat al in de lijst"); 
+            }
+            else
+            {
+                MessageBox.Show(" naam staat nog niet in de lijst"); 
+            }
+
+        }
+
+        private void button_Stapel_kleine_klasse_copy_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("er is een copy gemaakt van: " + stapel_Dier.ToString);
+            MessageBox.Show("er is een copy gemaakt van: " + stapel_String.ToString());
+        }
+
+        private void button_Stapel_kleine_klasse_ToString_Click(object sender, EventArgs e)
+        {
+            label_kleine_klasse_text.Text = stapel_Dier.ToString();
+        }
+
+
+
+
+        
     }
 }
